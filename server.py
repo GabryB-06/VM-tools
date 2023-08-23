@@ -9,18 +9,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def upload_file():
-   #return render_template('upload.html')
-   return '''
-<html>
-   <body>
-      <form action = "/uploader" method = "POST" 
-         enctype = "multipart/form-data">
-         <input type = "file" name="file"/>
-         <input type = "submit"/>
-      </form>
-   </body>
-</html>
-'''
+   return render_template('upload.html')
 	
 @app.route('/uploader', methods=['POST'])
 def uploader_file():
