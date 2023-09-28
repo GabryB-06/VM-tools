@@ -3,10 +3,6 @@
 
 Script Python per inviare files da una VM (dovrebbe andare bene anche per trasferire da qualsiasi dispositivo connesso in LAN) verso la macchina che sta eseguendo questo backend
 
-# Installazione
-
-`pip install -r requirements.txt`
-
 ## Utilizzo (guest -> host)
 
 Eseguire lo script e collegarsi in HTTP verso l'IP della macchina che sta eseguendo il backend sulla porta 5000 (es. `http://192.168.1.25:5000`)
